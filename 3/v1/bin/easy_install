@@ -1,4 +1,4 @@
-#!/cshome/nbui/Desktop/410-webdevelopment/lab6/3/v1/bin/python
+#!/cshome/nbui/Desktop/410-webdevelopment/lab6/lab6-7/3/v1/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'distribute==0.6.24','console_scripts','easy_install'
 __requires__ = 'distribute==0.6.24'
 import sys

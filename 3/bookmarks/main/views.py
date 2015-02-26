@@ -36,5 +36,17 @@ def add_link(request):
 		title = request.POST.get("title", "")
 
 		#TODO your code here
+		try:
+			link = Link.objects.create(url=url, title=title)
+		except DatabaseError:
+			return redirect(index)
+
+		tag_array = tags.split(r'; |, ')
+		for i in tag_array:
+			try:
+				tag = Tag.objects.get(name=i)
+			except Tag.DoesNotExist:
+				tag = Tag.objects.create(name=i)
+			link.tags.add(tag)
 	return redirect(index)
 

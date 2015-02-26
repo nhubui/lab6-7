@@ -33,7 +33,7 @@
                             <h4><a href="{{ link.url }}">{{ link.title }}</a></h4>
                             <p class="tags">
                                 {% for tag in link.tags.all %}
-                                    <a href="/bookmarks/tags/{{ tag.name }}/">{{ tag.name }}</a>
+                                    <a href="/bookmars/tags/{{ tag.name }}/">{{ tag.name }}</a>
                                 {% endfor %}
                             </p>
                         </div>
